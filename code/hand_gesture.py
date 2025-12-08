@@ -47,12 +47,10 @@ class HandGestureController:
         wrist = landmarks.landmark[self.mp_hands.HandLandmark.WRIST]
         tips = [4, 8, 12, 16, 20]  # thumb, index, middle, ring, pinky
         pips = [3, 6, 10, 14, 18]  # thumb_ip, others_pip
-
         raised = 0
-        # Erhii huruu (ontsgoi)
+        # Doloowor huruu (ontsgoi)
         if abs(landmarks.landmark[4].x - landmarks.landmark[2].x) > 0.05:
             raised += 1
-            
         # Busad 4 huruu
         for tip_id, pip_id in zip(tips[1:], pips[1:]):
             tip = landmarks.landmark[tip_id]
