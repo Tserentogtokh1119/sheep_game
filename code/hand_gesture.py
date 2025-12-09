@@ -21,8 +21,8 @@ class HandGestureController:
             print("camera neej chadsangui.")
             self.use_keyboard = True
         else:
-            self.cap.set(3, 640)
-            self.cap.set(4, 480)
+            self.cap.set(3, 300)
+            self.cap.set(4, 300)
             self.use_keyboard = False
         
         # Smooth hudulguun
