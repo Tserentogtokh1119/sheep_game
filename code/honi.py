@@ -20,7 +20,7 @@ class SheepCollectGame:
         self.smoke_interval = 0.2
 
         try:
-            self.background = pygame.image.load('D:\semester5\AI\hand_gesture\game2\hg_rec\honi\env\grass.png').convert()
+            self.background = pygame.image.load('D:/semester5/AI/project/hg_rec/honi/env\grass.png').convert()
             self.background = pygame.transform.scale(self.background, (self.X//5, self.Y//5))
         except Exception as e:
             print(f"Failed to load background.png: {e}")
@@ -31,7 +31,7 @@ class SheepCollectGame:
             pygame.draw.circle(self.background, (100, 200, 100), (3*self.X//4, self.Y//3), 200)
 
         try:
-            self.yurt = pygame.image.load('D:\semester5\AI\hand_gesture\game2\hg_rec\honi\env\ger.png').convert_alpha()
+            self.yurt = pygame.image.load('D:/semester5/AI/project/hg_rec/honi/env\ger.png').convert_alpha()
             self.yurt = pygame.transform.scale(self.yurt, (220, 220))
         except Exception as e:
             print(f"Failed to load yurt.png: {e}")
@@ -45,7 +45,7 @@ class SheepCollectGame:
         self.collision_yurt_rect.center = (self.X//2, 120)
 
         try:
-            self.fence = pygame.image.load('D:\semester5\AI\hand_gesture\game2\hg_rec\honi\env\hashaa.png').convert_alpha()
+            self.fence = pygame.image.load('D:/semester5/AI/project/hg_rec/honi/env\hashaa.png').convert_alpha()
             self.fence = pygame.transform.scale(self.fence, (200, 300))
         except Exception as e:
             print(f"Failed to load fence.png: {e}")
@@ -63,7 +63,7 @@ class SheepCollectGame:
         self.fence_right_collision.center = self.fence_right.center
 
         try:
-            sheep_img = pygame.image.load('D:\semester5\AI\hand_gesture\game2\hg_rec\honi\env\honi.png').convert_alpha()
+            sheep_img = pygame.image.load('D:/semester5/AI/project/hg_rec/honi/env\honi.png').convert_alpha()
             sheep_img = pygame.transform.scale(sheep_img, (60, 60))
             self.sheep_images = [
                 sheep_img,
@@ -85,7 +85,7 @@ class SheepCollectGame:
             ]
 
         try:
-            player1_img = pygame.image.load('D:\semester5\AI\hand_gesture\game2\hg_rec\honi\env\huu.png').convert_alpha()
+            player1_img = pygame.image.load('D:/semester5/AI/project/hg_rec/honi/env\huu.png').convert_alpha()
             player1_img = pygame.transform.scale(player1_img, (90, 90))
             self.player1_images = [
                 player1_img,
@@ -110,7 +110,7 @@ class SheepCollectGame:
             ]
 
         try:
-            player2_img = pygame.image.load('D:\semester5\AI\hand_gesture\game2\hg_rec\honi\env\ohin.png').convert_alpha()
+            player2_img = pygame.image.load('D:/semester5/AI/project/hg_rec/honi/env\ohin.png').convert_alpha()
             player2_img = pygame.transform.scale(player2_img, (90, 90))
             self.player2_images = [
                 player2_img,
